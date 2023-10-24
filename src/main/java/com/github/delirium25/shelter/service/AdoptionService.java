@@ -71,10 +71,10 @@ public class AdoptionService {
 
     private static void validateAnimals(List<UUID> animalIds, List<Animal> animals) {
         if (animalIds.size() != animals.size()) {
-            throw new AnimalNotFoundException(animalIds); //keressük ki melyik hiányzik pontosan
+            throw new AnimalNotFoundException(animalIds);
         }
         if (animals.stream().anyMatch(Animal::isAdopted)) {
-            throw new AnimalAlreadyAdoptedException(); //debughoz nem jó
+            throw new AnimalAlreadyAdoptedException();
         }
     }
 

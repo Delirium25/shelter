@@ -10,7 +10,6 @@ import com.github.delirium25.shelter.repository.AnimalRepo;
 import com.github.delirium25.shelter.repository.NewOwnerRepo;
 import lombok.RequiredArgsConstructor;
 import org.jetbrains.annotations.NotNull;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
